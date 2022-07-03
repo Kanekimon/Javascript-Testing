@@ -22,7 +22,7 @@ class Box{
 
                     let sum = abs(x) + abs(y) + abs(z);
 
-                    if(sum <= 3){
+                    if(sum > 1){
 
                     let newR = this.r/3;
                     let b = new Box(this.position.x + x*newR,this.position.y + y*newR,this.position.z + z*newR, newR, random(255), random(255), random(255));
